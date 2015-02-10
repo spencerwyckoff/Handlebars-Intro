@@ -55,40 +55,11 @@ SO: '743' },
 ]
 };
 
-var missingData = {
-
-players: [
-
-{ player: 'Andruw Jones', 
-team: 'Atlanta Braves', 
-bats: 'right', 
-throws: 'right', 
-BA: '.240', 
-OBP: '.304', 
-HR: '302', 
-hits: '876', 
-SO: '4029' },
-
-{ player: 'Rafael Furcal', 
-team: 'LA Dodgers', 
-bats: 'right', 
-throws: 'right', 
-BA: '.297', 
-OBP: '.476', 
-HR: '140', 
-hits: '937', 
-SO: '437' },
-	
-]
-
-}; 
-
 
 
 var source = $('#cards').html();
 var template = Handlebars.compile(source);
 $('.myCollection').html(template(data));
 
-var templateB = Handlebars.templates.missing;
-var missingHTML = templateB(missingData);
-$('.myMissingCollection').html(missingHTML);
+var templateB = Handlebars.compile('#missingCards');
+$('.myCollection').html(templateB(missingData));

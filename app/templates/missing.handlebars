@@ -1,27 +1,15 @@
-var missingData = {
-
-players: [
-
-{ player: 'Andruw Jones', 
-team: 'Atlanta Braves', 
-bats: 'right', 
-throws: 'right', 
-BA: '.240', 
-OBP: '.304', 
-HR: '302', 
-hits: '876', 
-SO: '4029' },
-
-{ player: 'Rafael Furcal', 
-team: 'LA Dodgers', 
-bats: 'right', 
-throws: 'right', 
-BA: '.297', 
-OBP: '.476', 
-HR: '140', 
-hits: '937', 
-SO: '437' },
-	
-]
-
-}; 
+{{#each players}}
+<div class="baseballCard">     
+  <h2>{{player}}</h2>
+  <h4>{{team}}</h4>
+  <ul>
+    <li>Throws: {{throws}}</li>
+    <li>Bats: {{bats}}</li>
+    <li>BA: {{BA}}</li>
+    <li>OBP%: {{OBP}}</li>
+    <li>HR: {{HR}}</li>
+    <li>Hits: {{hits}}</li>
+    <li>SO: {{SO}}</li>
+  </ul>
+</div> 
+{{/each}}
