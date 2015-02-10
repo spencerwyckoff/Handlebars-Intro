@@ -55,6 +55,11 @@ SO: '743' },
 ]
 };
 
+
+
 var source = $('#cards').html();
 var template = Handlebars.compile(source);
-$('body').html(template(data));
+$('.myCollection').html(template(data));
+
+var templateB = Handlebars.compile('#missingCards');
+$('.myCollection').html(templateB(missingData));
