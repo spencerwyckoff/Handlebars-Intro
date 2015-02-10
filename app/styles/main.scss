@@ -1,0 +1,32 @@
+ // Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+// Custom Styles
+body {
+  background: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 5%;
+}
+
+.baseballCard {
+  height: 300px;
+  width: 225px;
+  background: white;
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  padding: 5px 10px;
+  margin: 5px;
+  display: inline-block;
+
+  h4 {
+    color: navy;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+    }
+  }
+}
